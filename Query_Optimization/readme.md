@@ -11,24 +11,47 @@
 - [Employ Stored Procedures for Reusability and Maintainability](#employ-stored-procedures-for-reusability-and-maintainability)
 
 
-1. **Prioritize Selecting Specific Fields***
-   
-   Unoptimized
-   ``` bash
-   SELECT * FROM Production.Product;
-```
+### Prioritize Selecting Specific Fields
+Details on why and how to prioritize selecting specific fields in queries.
 
-Optimized:
-``` bash
-   SELECT ProductID, Name, Color, ListPrice 
-FROM Production.Product;
-```
-2. Avoid WHERE Clause Functions
-3. Explore Alternatives to SELECT DISTINCT
-4. Position Wildcards Strategically
-5. Implement Pagination for Large Result Sets
-6. Leverage Joins over Subqueries
-7. Utilize Indexes for Efficient Filtering and Joins
-8. Employ Stored Procedures for Reusability and Maintainability 
+<a name="prioritize-selecting-specific-fields"></a>
+#### Unoptimized Query
 
+```sql
+SELECT * FROM Production.Product;
+
+### Avoid WHERE Clause Functions
+Guidelines on avoiding functions in WHERE clauses for better query performance.
+
+<a name="avoid-where-clause-functions"></a>
+
+### Explore Alternatives to SELECT DISTINCT
+Alternative approaches to achieve distinct results without using SELECT DISTINCT.
+
+<a name="explore-alternatives-to-select-distinct"></a>
+
+### Position Wildcards Strategically
+Best practices for placing wildcards in search queries to optimize performance.
+
+<a name="position-wildcards-strategically"></a>
+
+### Implement Pagination for Large Result Sets
+Techniques for implementing pagination to handle large data result sets efficiently.
+
+<a name="implement-pagination-for-large-result-sets"></a>
+
+### Leverage Joins over Subqueries
+Advantages of using joins instead of subqueries and how to implement them effectively.
+
+<a name="leverage-joins-over-subqueries"></a>
+
+### Utilize Indexes for Efficient Filtering and Joins
+Strategies for using indexes to improve performance in filtering and join operations.
+
+<a name="utilize-indexes-for-efficient-filtering-and-joins"></a>
+
+### Employ Stored Procedures for Reusability and Maintainability
+Benefits and best practices for using stored procedures to enhance code reusability and maintainability.
+
+<a name="employ-stored-procedures-for-reusability-and-maintainability"></a>
    
