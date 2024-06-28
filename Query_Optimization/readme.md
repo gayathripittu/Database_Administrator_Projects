@@ -12,8 +12,11 @@
 
 
 ### Prioritize Selecting Specific Fields
+
 Details on why and how to prioritize selecting specific fields in queries.
+
 #### Unoptimized Query
+
 ```sql
 SELECT * FROM Production.Product;
 
