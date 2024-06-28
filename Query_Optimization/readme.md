@@ -1,5 +1,7 @@
 ### Query Optimization
 
+This project aims to optimize SQL queries for performance and efficiency in the AdventureWorks2017 database. Each query example demonstrates techniques to enhance query speed and resource usage in SQL Server.
+
 ## Table of Contents
 - [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
 - [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
