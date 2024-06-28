@@ -189,7 +189,7 @@ Exec GetDiscountedProducts;
 Using a stored procedure (**GetDiscountedProducts**) centralizes and optimizes query execution, promoting reusability and easier maintenance.
 <a name="employ-stored-procedures-for-reusability-and-maintainability"></a>
 
-### Avoid Multiple OR Conditions in the WHERE Clause
+### 9.Avoid Multiple OR Conditions in the WHERE Clause
 #### Unoptimized <br>
 ```sql
 SELECT *
