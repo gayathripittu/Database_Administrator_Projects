@@ -13,12 +13,14 @@
 
 ### Prioritize Selecting Specific Fields
 Details on why and how to prioritize selecting specific fields in queries.
-
-<a name="prioritize-selecting-specific-fields"></a>
 #### Unoptimized Query
-
 ```sql
 SELECT * FROM Production.Product;
+
+<a name="prioritize-selecting-specific-fields"></a>
+
+
+
 
 ### Avoid WHERE Clause Functions
 Guidelines on avoiding functions in WHERE clauses for better query performance.
