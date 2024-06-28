@@ -1,6 +1,6 @@
 ### Query Optimization
 
-This project aims to optimize SQL queries for performance and efficiency in the AdventureWorks2017 database. Each query example demonstrates techniques to enhance query speed and resource usage in SQL Server.
+This project focuses on optimizing SQL queries using the AdventureWorks sample database provided by Microsoft Learn. The project aims to identify slow-running queries and refine them for improved efficiency. This involves analyzing execution plans, applying optimization techniques, and comparing query execution times before and after optimization.
 
 ## Table of Contents
 - [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
@@ -19,6 +19,15 @@ Details on why and how to prioritize selecting specific fields in queries.
 #### Unoptimized
 ```sql
 SELECT * FROM Production.Product;
+```
+
+`SELECT *` retrieves all columns, even unused ones. Specifying needed columns reduces data transfer and processing time. <br>
+-- optimized:<br>
+
+```sql
+
+SELECT ProductID, Name, Color, ListPrice 
+FROM [Production].[Product];
 ```
 <a name="prioritize-selecting-specific-fields"></a>
 
