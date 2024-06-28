@@ -1,3 +1,3 @@
 ### Query Optimization
 
-1. ** Choose SELECT Fields Over SELECT* **
+1. **Choose SELECT Fields Over SELECT***
