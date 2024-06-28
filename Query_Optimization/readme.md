@@ -3,6 +3,17 @@
 This project focuses on optimizing SQL queries using the AdventureWorks sample database provided by Microsoft Learn. The project aims to identify slow-running queries and refine them for improved efficiency. This involves analyzing execution plans, applying optimization techniques, and comparing query execution times before and after optimization.
 
 ## Table of Contents
+
+- [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
+- [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
+- [Explore Alternatives to SELECT DISTINCT](#explore-alternatives-to-select-distinct)
+- [Position Wildcards Strategically](#position-wildcards-strategically)
+- [Implement Pagination for Large Result Sets](#implement-pagination-for-large-result-sets)
+- [Leverage Joins over Subqueries](#leverage-joins-over-subqueries)
+- [Utilize Indexes for Efficient Filtering and Joins](#utilize-indexes-for-efficient-filtering-and-joins)
+- [Employ Stored Procedures for Reusability and Maintainability](#employ-stored-procedures-for-reusability-and-maintainability)
+- [Avoid Multiple OR Conditions in the WHERE Clause](#avoid-multiple-or-conditions-in-the-where-clause)
+  
 - [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
 - [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
 - [Explore Alternatives to SELECT DISTINCT](#explore-alternatives-to-select-distinct)
