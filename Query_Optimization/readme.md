@@ -1,25 +1,18 @@
 ### Query Optimization
 
 ## Table of Contents
-- [Section 1](#section-1)
-- [Section 2](#section-2)
-- [Section 3](#section-3)
-### Section 1
-<!-- Example anchor link -->
-<a name="section-1"></a>
+- [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
+- [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
+- [Explore Alternatives to SELECT DISTINCT](#explore-alternatives-to-select-distinct)
+- [Position Wildcards Strategically](#position-wildcards-strategically)
+- [Implement Pagination for Large Result Sets](#implement-pagination-for-large-result-sets)
+- [Leverage Joins over Subqueries](#leverage-joins-over-subqueries)
+- [Utilize Indexes for Efficient Filtering and Joins](#utilize-indexes-for-efficient-filtering-and-joins)
+- [Employ Stored Procedures for Reusability and Maintainability](#employ-stored-procedures-for-reusability-and-maintainability)
 
-
-## Table of contents
-1. #prioritize_selecting_specific_fields
-2. #avoid-where-clause-functions
-3. #explore-alternatives-to-select-distinct
-4. #position-wildcards-strategically
-5. #implement-pagination-for-large-result-sets
-6. #leverage-joins-over-subqueries
-7. #utilize-indexes-for-efficient-filtering-and-joins
-8. #employ-stored-procedures-for-reusability-and-maintainability
 
 1. **Prioritize Selecting Specific Fields***
+   
    Unoptimized
    ``` bash
    SELECT * FROM Production.Product;
