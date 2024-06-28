@@ -17,7 +17,7 @@ This project focuses on optimizing SQL queries using the AdventureWorks sample d
 - [Avoid Multiple OR Conditions in the WHERE Clause](#avoid-multiple-or-conditions-in-the-where-clause)
 
 
-### 1. Prioritize Selecting Specific Fields
+### Prioritize Selecting Specific Fields
 
 #### Unoptimized <br>
 ```sql
