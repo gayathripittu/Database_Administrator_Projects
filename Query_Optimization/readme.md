@@ -3,9 +3,6 @@
 This project focuses on optimizing SQL queries using the AdventureWorks sample database provided by Microsoft Learn. The project aims to identify slow-running queries and refine them for improved efficiency. This involves analyzing execution plans, applying optimization techniques, and comparing query execution times before and after optimization.
 
 ## Table of Contents
-
-[This is the link text](#heading-title)
-  
 - [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
 - [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
 - [Explore Alternatives to SELECT DISTINCT](#explore-alternatives-to-select-distinct)
@@ -33,9 +30,8 @@ FROM [Production].[Product];
 The optimized query selects only the necessary columns (**ProductID**, **Name**, **Color**, **ListPrice**), reducing the amount of data fetched and improving query performance by minimizing I/O operations.
 <a name="prioritize-selecting-specific-fields"></a>
 
-# Heading Title
 
-### 2. Avoid WHERE Clause Functions
+### Avoid WHERE Clause Functions
 
 #### Unoptimized <br>
 ```sql
@@ -56,7 +52,7 @@ The optimized query avoids the function in the **`WHERE`** clause, ensuring that
 
 <a name="avoid-where-clause-functions"></a>
 
-### 3. Explore Alternatives to SELECT DISTINCT
+### Explore Alternatives to SELECT DISTINCT
 #### Unoptimized <br>
 ```sql
 SELECT DISTINCT [City]
@@ -81,7 +77,7 @@ DROP TABLE DistinctCities;
 The optimized approach creates a temporary table (**DistinctCities**) to store unique cities, reducing the overhead of repeated **`DISTINCT`** operations and potentially improving query performance for subsequent queries.
 <a name="explore-alternatives-to-select-distinct"></a>
 
-### 4. Position Wildcards Strategically
+### Position Wildcards Strategically
 #### Unoptimized <br>
 ```sql
 SELECT * 
@@ -101,7 +97,7 @@ By placing the wildcard at the end of the **`LIKE`** pattern, SQL Server can pot
 
 <a name="position-wildcards-strategically"></a>
 
-### 5. Implement Pagination for Large Result Sets
+### Implement Pagination for Large Result Sets
 #### Unoptimized <br>
 ```sql
 SELECT * 
@@ -121,7 +117,7 @@ Implementing pagination with **`OFFSET`** and **`FETCH NEXT`** clauses ensures t
 
 <a name="implement-pagination-for-large-result-sets"></a>
 
-### 6. Leverage Joins over Subqueries
+### Leverage Joins over Subqueries
 #### Unoptimized <br>
 ```sql
 SELECT c.[CustomerID]
@@ -146,7 +142,7 @@ WHERE oh.OrderDate > '2014-01-01';
 Using **`INNER JOIN`** allows SQL Server to process the join operation more efficiently compared to a subquery, potentially improving query performance.
 <a name="leverage-joins-over-subqueries"></a>
 
-### 7.Utilize Indexes for Efficient Filtering and Joins
+### Utilize Indexes for Efficient Filtering and Joins
 Strategies for using indexes to improve performance in filtering and join operations#### Unoptimized <br>
 ```sql
 SELECT * 
@@ -167,7 +163,7 @@ WHERE Color = 'red';
 Creating an index on the **`Color1`** column allows SQL Server to quickly locate and retrieve rows that match the **`Color= 'red'`** condition, improving query performance significantly.
 <a name="utilize-indexes-for-efficient-filtering-and-joins"></a>
 
-### 8.Employ Stored Procedures for Reusability and Maintainability
+### Employ Stored Procedures for Reusability and Maintainability
 #### Unoptimized <br>
 ```sql
 SELECT * 
@@ -194,7 +190,7 @@ Exec GetDiscountedProducts;
 Using a stored procedure (**GetDiscountedProducts**) centralizes and optimizes query execution, promoting reusability and easier maintenance.
 <a name="employ-stored-procedures-for-reusability-and-maintainability"></a>
 
-### 9.Avoid Multiple OR Conditions in the WHERE Clause
+### Avoid Multiple OR Conditions in the WHERE Clause
 #### Unoptimized <br>
 ```sql
 SELECT *
