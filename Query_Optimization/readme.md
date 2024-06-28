@@ -1,5 +1,14 @@
 ### Query Optimization
 
+## Table of Contents
+- [Section 1](#section-1)
+- [Section 2](#section-2)
+- [Section 3](#section-3)
+### Section 1
+<!-- Example anchor link -->
+<a name="section-1"></a>
+
+
 ## Table of contents
 1. #prioritize_selecting_specific_fields
 2. #avoid-where-clause-functions
