@@ -4,15 +4,7 @@ This project focuses on optimizing SQL queries using the AdventureWorks sample d
 
 ## Table of Contents
 
-- [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
-- [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
-- [Explore Alternatives to SELECT DISTINCT](#explore-alternatives-to-select-distinct)
-- [Position Wildcards Strategically](#position-wildcards-strategically)
-- [Implement Pagination for Large Result Sets](#implement-pagination-for-large-result-sets)
-- [Leverage Joins over Subqueries](#leverage-joins-over-subqueries)
-- [Utilize Indexes for Efficient Filtering and Joins](#utilize-indexes-for-efficient-filtering-and-joins)
-- [Employ Stored Procedures for Reusability and Maintainability](#employ-stored-procedures-for-reusability-and-maintainability)
-- [Avoid Multiple OR Conditions in the WHERE Clause](#avoid-multiple-or-conditions-in-the-where-clause)
+[This is the link text](#heading-title)
   
 - [Prioritize Selecting Specific Fields](#prioritize-selecting-specific-fields)
 - [Avoid WHERE Clause Functions](#avoid-where-clause-functions)
@@ -40,6 +32,8 @@ FROM [Production].[Product];
 ```
 The optimized query selects only the necessary columns (**ProductID**, **Name**, **Color**, **ListPrice**), reducing the amount of data fetched and improving query performance by minimizing I/O operations.
 <a name="prioritize-selecting-specific-fields"></a>
+
+# Heading Title
 
 ### 2. Avoid WHERE Clause Functions
 
