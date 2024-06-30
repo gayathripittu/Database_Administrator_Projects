@@ -50,8 +50,8 @@ EXEC SP_Database_recovery @original_databasename = 'OriginalDatabaseName', @new_
   - 'L': Transaction log backup.
 - **@backup_file_path:** The path to the backup file.
 
-**Permissions:** Ensure you have the necessary permissions to create and alter databases.
-**File Paths:** Verify that the specified backup file paths exist and are accessible.
+**Permissions:** Ensure you have the necessary permissions to create and alter databases. <br>
+**File Paths:** Verify that the specified backup file paths exist and are accessible. <br>
 **Database State:** The restore procedure handles setting the database to single-user mode before restoring and reverting to multi-user mode afterward.
 
 
