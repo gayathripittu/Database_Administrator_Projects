@@ -15,8 +15,8 @@ EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'F';
 EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'D';
 EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'L';
 ```
--**@databasename:** The name of the database to back up. <br>
--**@backup_type:** The type of backup to perform. <br>
+- **@databasename:** The name of the database to back up. <br>
+- **@backup_type:** The type of backup to perform. <br>
   - 'F': Full backup. <br>
   - 'D': Differential backup. <br>
   - 'L': Transaction log backup. <br>
@@ -42,7 +42,6 @@ EXEC SP_Database_recovery @original_databasename = 'OriginalDatabaseName', @new_
 EXEC SP_Database_recovery @original_databasename = 'OriginalDatabaseName', @new_databasename = 'NewDatabaseName', @backup_type = 'L', @backup_file_path = 'Path\OriginalDatabaseName_Log_YYYYMMDDHHMM.TRN';
 
 ```
-<br>
 - **@original_databasename:** The name of the original database from which the backup was taken.
 - **@new_databasename:** The name of the new database to which the backup will be restored.
 - **@backup_type:** The type of backup to restore
