@@ -11,15 +11,15 @@ This stored procedure allows you to create full, differential, and transaction l
 #### Usage
 
 ```sql
-EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'F';<br>
-EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'D';<br>
+EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'F';
+EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'D';
 EXEC SP_Database_backup @databasename = 'YourDatabaseName', @backup_type = 'L';
 ```
-- **@databasename:** The name of the database to back up.
-- **@backup_type:** The type of backup to perform.
-  - 'F': Full backup.
-  - 'D': Differential backup.
-  - 'L': Transaction log backup.
+-**@databasename:** The name of the database to back up. <br>
+-**@backup_type:** The type of backup to perform. <br>
+  - 'F': Full backup. <br>
+  - 'D': Differential backup. <br>
+  - 'L': Transaction log backup. <br>
 
 #### Backup File Naming
 The backup files are stored in the E:\Backup\ directory with the following naming conventions:
